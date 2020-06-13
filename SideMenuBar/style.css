@@ -55,3 +55,34 @@ nav ul li a:hover {
   text-decoration: none;
   border-left-color: cyan;
 }
+
+.fa-caret-square-down {
+  color: white;
+  height: 8px;
+  width: 8px;
+}
+
+nav ul ul {
+  position: static;
+  /* display: none; */
+}
+
+nav ul ul li {
+  line-height: 4rem;
+  border-bottom: none;
+}
+
+nav ul ul li {
+  font-size: 1.7rem;
+  color: #e6e6e6;
+  padding-left: 7rem;
+}
+i {
+  position: absolute;
+  font-size: 20px ;
+  display: none;
+}
+
+.menuItem .hide {
+  display: none;
+}
