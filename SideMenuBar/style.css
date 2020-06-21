@@ -38,6 +38,8 @@ nav ul li {
   border-bottom: 1px solid #94949451;
 }
 
+
+
 nav ul li a {
   color: white;
   font-size: 2rem;
@@ -86,3 +88,11 @@ i {
 .menuItem .hide {
   display: none;
 }
+
+li > ul {
+  display: none;
+}
+
+li.hide > ul {
+  display: block;
+} 

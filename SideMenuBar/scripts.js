@@ -1,12 +1,20 @@
-function showMenu() {
+function onOff() {
   document
-    .querySelectorAll(".menuElement")
-    .addEventListener("click", function() {
-      document
-        .querySelector(".menuItem")
-        .classList
-        .toggle("hide")
-    })
+  .querySelector(".menuElement")//procura um elemento
+  .classList//adiciona uma class
+  .toggle("hide")//alterna entre os estilos
+
+  document
+  .querySelector("body")
+  .classList
+  .toggle("hideScroll")
+
+  document
+  .querySelector("#modal")
+  .classList
+  .toggle("addScroll")
 }
 
-showMenu()
+function click() {
+  document.addEventListener('click', onOff())
+}
