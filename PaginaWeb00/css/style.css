@@ -119,3 +119,56 @@ nav a:hover {
     padding: 0 0 3rem 2rem;
 }
 
+.portfolio {
+  background-color: #f2f2ff;
+}
+
+.galler-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image-port {
+  width: 24%;
+  height: 15rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.image-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background-color: #4d068698;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-port:hover .hover-galery {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.hover-galery img {
+  width: 5rem;
+}
+
+.hover-galery p {
+  color: white;
+  font-size: 1.4rem;
+}
