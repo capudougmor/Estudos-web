@@ -120,7 +120,7 @@ p {
   color: #555;
 }
 
-.title:after {
+.title::after {
   content: '';
   background: #ff523b;
   width: 80px;
@@ -137,8 +137,22 @@ p {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  color: #555;
+  transition: tranform 0.5s;
 }
 
 .col-4 img {
   width: 100%;
+}
+
+.col-4 h4 {
+    font-size: 1.6rem;
+}
+
+.rating {
+    color: #ff5223;
+}
+
+.rating i {
+    font-size: 2rem;
 }
