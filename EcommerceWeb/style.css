@@ -156,3 +156,81 @@ p {
 .rating i {
     font-size: 2rem;
 }
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+/* --------offer------ */
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.9);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+    transform: scale(1.05);
+}
+
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    color: #777;
+}
+
+.col-3 h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* -------brands------- */
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.col-5 img:hover {
+    filter: grayscale(90%);
+}
