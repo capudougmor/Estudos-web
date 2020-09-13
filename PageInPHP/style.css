@@ -6,29 +6,29 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
 h1, h2, h3, h4, h5 {
   text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 1.8rem;
   color: #bababa;
+}
+
+section div h2 {
+  margin: 20px 0;
 }
 
 p {
   font-size: 1.4rem;
+  color:#222;
 }
 
 i {
   font-size: 2.4rem;
-  margin-top: 10px;
   color: #404580;
-
-}
-
-header {  
-  background: #0049B7;  /* fallback for old browsers */
-}
-header .menuHamburger {
-  display: none;
 }
 
 .logo {
@@ -36,11 +36,39 @@ header .menuHamburger {
   color:#fff;
 }
 
+.container {
+  width: 90%;
+  max-width: 60rem;
+  flex-direction: column;
+}
+
 .center {
   max-width: 1280px;
-  margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.w50 {
+  flex: 1;
+}
+
+.w50:nth-child(2) {
+  margin-left: 40px;
+}
+
+header {  
+  background: #0049B7;  /* fallback for old browsers */
+}
+
+header .menuHamburger {
+  display: none;
 }
 
 nav {
@@ -49,7 +77,7 @@ nav {
   font-size: 1.8rem;
   flex: 1;
 }
-nav ul {
+nav ul.flexCenter {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
@@ -60,8 +88,9 @@ nav ul li {
   list-style-type: none;
 }
 
-nav a {
+nav ul li a {
   color: #fff;
+  font-size: 1.8rem;
   font-weight: 300;
   text-decoration: none;
 }
@@ -83,14 +112,9 @@ nav a:hover {
 section .bannerPrincipal {
   width: 100vw;
   height: 50vh;
+  flex-direction: column;
   background: linear-gradient(to bottom, #443938c6, #53555ab9), url(./images/IMG-20190504-WA0042.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
-  /* background-attachment: fixed; */
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 section .bannerPrincipal h2 {
@@ -103,7 +127,7 @@ section .bannerPrincipal h2 {
 section .bannerPrincipal input[type=email] {
   width: 90%;
   max-width: 60rem;
-  height: 5rem;
+  height: 4rem;
   color: #333;
   font-size: 2rem;
   margin-top: 1.2rem;
@@ -114,7 +138,7 @@ section .bannerPrincipal input[type=email] {
 section .bannerPrincipal input[type=submit] {
   width: 90%;
   max-width: 60rem;
-  height: 5rem;
+  height: 4rem;
   background-color: #00c59e;
   color: #fff;
   font-size: 2rem;
@@ -130,14 +154,7 @@ section .bannerPrincipal input[type=submit]:hover {
 section.authorDescription {
   width: 90%;
   max-width: 60rem;
-  margin: 1.2rem auto;
-  
-}
-
-section.authorDescription .descriptionContent{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 1.2rem auto;  
 }
 
 .textBlock p {
@@ -154,24 +171,12 @@ section.authorDescription div img {
 }
 
 section.specialtiesContent {
-  margin: 1.2rem auto;
   background: #e2e2e2;
-  /* margin: 0 auto; */
-}
-
-section.specialtiesContent .center {
-  width: 90%;
-  max-width: 60rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 section.specialtiesContent .specialties {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 section.specialtiesContent .specialties p {
@@ -179,13 +184,17 @@ section.specialtiesContent .specialties p {
 }
 
 section.specialtiesContent .specialties:nth-child(2) {
-  padding: 40px;
+  padding: 0 40px;
   text-align: justify;
 }
 
 section.specialtiesContent .specialties h3,
 section.specialtiesContent .specialties i {
-  font-size: 2.2rem; 
+  font-size: 1.8rem; 
+}
+
+section.extras {
+  
 }
 
 
@@ -194,6 +203,9 @@ section.specialtiesContent .specialties i {
     font-size: 90%;
   }
 
+}
+
+@media (max-width: 768px) {
   header .center {
     flex-direction: column-reverse;
   }
@@ -201,16 +213,15 @@ section.specialtiesContent .specialties i {
     display: flex;
     margin: 0 auto;
   }
-
+  
   nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
     background-color: #444;
   }
-}
 
-@media (max-width: 768px) {
+  .flexCenter {
+    flex-direction: column;
+  }
   .descriptionContent {
     flex-direction: column;
   }
@@ -223,6 +234,10 @@ section.specialtiesContent .specialties i {
 
   section.specialtiesContent .center {
     flex-direction: column;
+  }
+
+  section.specialtiesContent .specialties:nth-child(2) {
+    padding: 0 
   }
 
   section.specialtiesContent .specialties p {
