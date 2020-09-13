@@ -8,20 +8,27 @@
 
 h1, h2, h3, h4, h5 {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  color: #bababa;
 }
 
 p {
   font-size: 1.4rem;
 }
 
-body {
-  font-size: 1.6rem;
+i {
+  font-size: 2.4rem;
+  margin-top: 10px;
+  color: #404580;
+
 }
 
 header {  
   background: #0049B7;  /* fallback for old browsers */
+}
+header .menuHamburger {
+  display: none;
 }
 
 .logo {
@@ -64,9 +71,13 @@ nav a:hover {
 }
 
 .title {
-  color: #642a73;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
+}
+.menuHamburger i {
+  font-size: 26px;
+  color: #FFF;
+  margin-bottom: 10px;
 }
 
 section .bannerPrincipal {
@@ -75,7 +86,7 @@ section .bannerPrincipal {
   background: linear-gradient(to bottom, #443938c6, #53555ab9), url(./images/IMG-20190504-WA0042.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   /* background-attachment: fixed; */
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +96,6 @@ section .bannerPrincipal {
 section .bannerPrincipal h2 {
   color: #fff;
   font-weight: 500;
-  font-size: 3rem;
   text-align: center;
   margin-bottom: 1.2rem;
 }
@@ -115,4 +125,108 @@ section .bannerPrincipal input[type=submit] {
 }
 section .bannerPrincipal input[type=submit]:hover {
   opacity: 0.9;
+}
+
+section.authorDescription {
+  width: 90%;
+  max-width: 60rem;
+  margin: 1.2rem auto;
+  
+}
+
+section.authorDescription .descriptionContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textBlock p {
+  text-align: justify;
+  margin-top: 24px;
+}
+
+section.authorDescription div img {
+  width: 50%;
+  height: 400px;
+  margin-left: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+section.specialtiesContent {
+  margin: 1.2rem auto;
+  background: #e2e2e2;
+  /* margin: 0 auto; */
+}
+
+section.specialtiesContent .center {
+  width: 90%;
+  max-width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.specialtiesContent .specialties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.specialtiesContent .specialties p {
+  text-align: justify;
+}
+
+section.specialtiesContent .specialties:nth-child(2) {
+  padding: 40px;
+  text-align: justify;
+}
+
+section.specialtiesContent .specialties h3,
+section.specialtiesContent .specialties i {
+  font-size: 2.2rem; 
+}
+
+
+@media (max-width: 480px) {
+  * {
+    font-size: 90%;
+  }
+
+  header .center {
+    flex-direction: column-reverse;
+  }
+  header .menuHamburger {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444;
+  }
+}
+
+@media (max-width: 768px) {
+  .descriptionContent {
+    flex-direction: column;
+  }
+  
+  section.authorDescription div img {
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+
+  section.specialtiesContent .center {
+    flex-direction: column;
+  }
+
+  section.specialtiesContent .specialties p {
+    text-align: center;
+    padding: 2rem;
+  }
 }
