@@ -28,10 +28,8 @@ main {
 }
 
 .container {
-  padding: 6rem;
   width: 90%;
   max-width: 1100px;
-  overflow: hidden;
 }
 
 .title {
@@ -59,107 +57,113 @@ nav {
 }
 
 nav a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 nav a:hover {    
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .text-header {
-    display: flex;
-    height: 430px;
-    width: 100%;
-    font-size: 2.6rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  font-size: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .text-header h1 {
-    font-size: 5rem;
-    color: white;
+  font-size: 5rem;
+  color: white;
 }
 
 .text-header h2 {
-    font-size: 3rem;
-    color: white;
-    font-weight: 300;
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
 }
 
 .wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .overOther {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .container {
-    display: flex;
+  display: flex;
+}
+
+.overOther h1 {
+  color: #000;
+  font-size: 2.2rem;
+  z-index: 5;
 }
 
 .image-about-us {
-    width: 48%;
+  width: 48%;
 }
 
 .overOther .container-text {
-    width: 48%;
+  width: 48%;
 }
 
 .container-text h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .container-text h3 span {
-    background: #4d0686;
-    color: white;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    height: 2rem;
-    width: 2rem;
-    padding: 2px;
-    margin-right: 5px;
+  background: #4d0686;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  height: 2rem;
+  width: 2rem;
+  padding: 2px;
+  margin-right: 5px;
 
 }
 
 .container-text p {
-    font-size: 1.6rem;
-    text-align: justify;
-    font-weight: 300;
-    padding: 0 0 3rem 2rem;
+  font-size: 1.6rem;
+  text-align: justify;
+  font-weight: 300;
+  padding: 0 0 3rem 2rem;
 }
 
 .portfolio {
-    background-color: #f2f2ff;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #f2f2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
 h2 {
-    margin: 20px
-  }
-  
-  .galler-port {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  margin: 20px
+}
+
+.galler-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .image-port {
@@ -207,32 +211,33 @@ h2 {
 }
 
 .client {
-    background-color: #ffffff;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .client .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+
+}
+
+.client .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .client .cards .card {
-    background-color: #4d0686;
-    margin: 20px 0;
-    display: flex;
-    height: 20rem;
-    width: 46%;
-    max-width: 500px;
-    min-width: 400px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  background-color: #4d0686;
+  margin: 20px 0;
+  display: flex;
+  height: 20rem;
+  width: 46%;
+  max-width: 500px;
+  min-width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
 .client .cards .card img {
@@ -257,31 +262,97 @@ h2 {
 }
 
 .about-services {
-    background-color: #f2f2f2;
-    padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .about-services .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .about-services .container .service-cont {
-    display: flex;
-  }
-  
-  
-  .about-services .container .ind {
-    max-width: 400px;
-    min-width: 300px;
+  background-color: #f2f2f2;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-services .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-services .container .service-cont {
+  display: flex;
+}
+
+.about-services .container .ind {
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.service-ind p{
+  padding: 20px 10px;
+  font-weight: 300;
+  text-align: justify;
 }
 
 .about-services .container .service-cont img {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}´
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #af20d3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #ccc;
+}
+
+.title-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    background-position: center;
+  }
+
+  .overOther .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .overOther .container-text {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  
+  .overOther .container img {
+    padding-bottom: 20px;
+    width: 90%;
+  }
 }
