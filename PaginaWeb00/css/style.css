@@ -30,12 +30,14 @@ main {
 .container {
   width: 90%;
   max-width: 1100px;
+  padding-bottom: 6rem;
 }
 
 .title {
   color: #642a73;
   font-size: 3rem;
   text-align: center;
+  padding-top: 6rem;
 }
 
 header {
@@ -53,7 +55,7 @@ header {
 nav {
   text-align: right;
   padding: 30px 50px 0 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 nav a {
@@ -167,13 +169,13 @@ h2 {
 }
 
 .image-port {
-  width: 24%;
+  max-width: 24%;
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .image-port > img {
@@ -216,28 +218,23 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 6rem;
 
 }
 
 .client .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .client .cards .card {
-  background-color: #4d0686;
-  margin: 20px 0;
+  background: #4d0686;
   display: flex;
-  height: 20rem;
   width: 46%;
-  max-width: 500px;
-  min-width: 400px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .client .cards .card img {
@@ -247,18 +244,18 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
     margin: 15px
-}
-
-.card .container-text-card {
+  }
+  
+  .card .container-text-card {
     font-size: 1.8rem;
     text-align: justify;
     color: white;
-    width: 50%;
+    margin: 15px;
 }
 
 .card .container-text-card p {
     padding-top: 2rem;
-    color: gray;
+    color: #ccc;
 }
 
 .about-services {
@@ -273,16 +270,19 @@ h2 {
 .about-services .container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .about-services .container .service-cont {
   display: flex;
 }
 
-.about-services .container .ind {
+.about-services .container .service-ind {
   max-width: 400px;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-ind p{
@@ -329,23 +329,27 @@ footer {
 
 .title-final{
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 20px 0 0 0;
   color: #9e9797;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
+  * {
+    font-size: 60%;
+  }
+
   header {
     background-position: center;
   }
-
+  
   .overOther .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
   }
-
+  
   .overOther .container-text {
     width: 90%;
     padding-bottom: 20px;
@@ -354,5 +358,66 @@ footer {
   .overOther .container img {
     padding-bottom: 20px;
     width: 90%;
+  }
+
+  .client .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .client .cards .card {
+    width: 80%;
+  }  
+
+  .cards .card:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  .service-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+  font-size: 50%;
+  }
+
+  nav {
+    text-align: center;
+    padding: 30px 0 0 0 ;
+  }
+
+  nav > a {
+    margin-right: 5px;
+  }
+
+  .client .cards .card {
+    max-width: 97%;
+    height: 450px;
+    flex-direction: column;
+  }
+  
+  .client .cards .card img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .content-foo h4 {
+    border: none;
+  }
+
+  .content-foo p {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
